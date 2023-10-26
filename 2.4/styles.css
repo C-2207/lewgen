@@ -1,0 +1,169 @@
+/* Скидання деяких типових стилів за замовчуванням */
+body, h1, h2, ul, li, form, table {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Застосування фонового кольору та кольору тексту до body */
+body {
+    margin: 0;
+    padding: 4vh;
+    background-color: #f7f7f7; /* Змінено фон на світло-сірий колір */
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Стилізація заголовка */
+header {
+    background-color: #8CE6C5;
+    color: #fff;
+    padding: 20px 0; /* Збільшено відступи */
+    text-align: center;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 36px; /* Збільшено розмір шрифту заголовка */
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px; /* Збільшено відстань між пунктами меню */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Додано анімацію для кольору тексту */
+}
+
+header nav ul li a:hover {
+    color: #ff9900; /* Змінено колір тексту при наведенні на посилання */
+}
+
+/* Стилізація контейнера для 2 секцій */
+.main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}	
+
+/* Стилізація секції з контентом */
+.content {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd; /* Змінено колір меж секції */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Змінено тінь */
+    margin: 20px 20px 0 0;
+    width: 20%;
+}
+
+.content h2 {
+    font-size: 28px; /* Збільшено розмір шрифту заголовка */
+    color: #333;
+    border-bottom: 2px solid #94F2D0;
+    padding-bottom: 10px;
+}
+
+.content ul {
+    padding-left: 30px;
+}
+
+.content ul li {
+    margin: 15px 0;
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Стилізація секції з формою */
+.form {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 75%;
+}
+
+.form h2 {
+    font-size: 28px;
+    color: #333;
+    border-bottom: 2px solid #94F2D0;
+    padding-bottom: 10px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555; /* Змінено колір тексту міток на сірий */
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f7f7f7; /* Змінено фон полів вводу */
+}
+
+.form button[type="submit"] {
+    background-color: #7CCCAF;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button[type="submit"]:hover {
+    background-color: #3E6657;
+    color: white;
+}
+
+/* Стилізація секції з таблицею */
+.table {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.table h2 {
+    font-size: 28px;
+    color: #333;
+    border-bottom: 2px solid #94F2D0;
+    padding-bottom: 10px;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.table th {
+    background-color: #94F2D0;
+    color: #fff;
+}

@@ -1,0 +1,25 @@
+/* Стилі для розділу ". Форматування шрифту" */
+.font-formatting {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Стилі для розділу ". Форматування тексту" */
+.text-formatting {
+    color: #0000FF;
+    text-align: center;
+    line-height: 2;
+}
+
+/* Стилі для розділу "3. Внутрішні та зовнішні відступи" */
+.spacing {
+    padding: 25px;
+    margin: 15px;
+}
+
+/* Стилі для розділу "4. Рамки" */
+.border {
+    border: 2px dotted #FFFF00;
+    border-radius: 10px;
+}

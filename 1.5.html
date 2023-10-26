@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Реєстрація на сайт знайомств</title>
+    <style>
+        body {
+            background-image: url('557.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: 0 auto;
+        }
+        label, input, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>БЕЗ МУЗИКИ ПРОХОДЖЕННЯ ЗАБОРОНЯЄТЬСЯ</h1>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4jDmJ51x1o9NZB5Nxxc7gY?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <form action="/submit" method="post" target="_blank">
+        <label for="gender">Стать:</label>
+        <select id="gender" name="gender">
+            <option value="male">Чоловік</option>
+            <option value="female">Жінка</option>
+            <option value="other">Інше</option>
+        </select><br><br>
+        
+        <label for="relationshipStatus">Чи були раніше у відносини:</label>
+        <input type="radio" id="relationshipYes" name="relationshipStatus" value="yes">
+        <label for="relationshipYes">Так</label>
+
+        <input type="radio" id="relationshipNo" name="relationshipStatus" value="no">
+        <label for="relationshipNo">Ні</label><br><br>
+        
+        <label for="dob">Дата народження:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        
+        <label for="firstName">Ім'я:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="lastName">Прізвище:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="email">Адреса електронної пошти:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <input type="submit" value="Відправити">
+    </form>
+</body>
+</html>
+
+
+

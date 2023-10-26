@@ -1,0 +1,77 @@
+/* Стилі для контейнера */
+.container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Стилі для всіх блоків */
+.box {
+    width: 100px;
+    height: 100px;
+    border: none; /* Видаляємо рамку */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 10px; /* Заокруглені краї */
+    transition: transform 0.3s ease, background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+/* Стилі для блоку зі статичним позиціонуванням */
+.static {
+    background-color: #ffcc00;
+    position: absolute ;
+	left: 150px;
+    z-index: 1;
+}
+
+.static:hover {
+    background-color: #ffc700; /* Змінюємо колір при наведенні */
+    transform: scale(1.1); /* Збільшуємо розмір при наведенні */
+}
+
+/* Стилі для блоку з відносним позиціонуванням */
+.relative {
+    background-color: #ff6666;
+    position: relative;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.relative:hover {
+    background-color: #ff5555; /* Змінюємо колір при наведенні */
+    transform: scale(1.1); /* Збільшуємо розмір при наведенні */
+}
+
+/* Стилі для блоку з абсолютним позиціонуванням */
+.absolute {
+    background-color: #66ccff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.absolute:hover {
+    background-color: #55aaff; /* Змінюємо колір при наведенні */
+    transform: scale(1.1); /* Збільшуємо розмір при наведенні */
+}
+
+/* Стилі для блоку з фіксованим позиціонуванням */
+.fixed {
+    background-color: #99ff99;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 4;
+}
+
+.fixed:hover {
+    background-color: #88ee88; /* Змінюємо колір при наведенні */
+    transform: scale(1.1); /* Збільшуємо розмір при наведенні */
+}
+

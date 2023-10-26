@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розклад та реєстрація</title>
+    <style>
+        body {
+            text-align: center;
+            background-image: url('https://abrakadabra.fun/uploads/posts/2022-01/1641204096_1-abrakadabra-fun-p-sinii-fon-dlya-prevyu-1.jpg');
+            background-size: cover; /* Заповнити фон вікна браузера */
+            background-repeat: no-repeat; /* Заборонити повторення фону */
+        }
+
+        table {
+            background-color: white ;
+            width: 900px;
+            border-collapse: collapse;
+            margin: 0 auto; /* Центрування таблиці по горизонталі */
+        }
+
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px; /* Зменшуємо внутрішній відступ для кращого вигляду */
+        }
+
+        /* Стилі для бічного елемента aside, що буде розташований праворуч */
+        aside {
+            float: right; 
+            width: 300px; 
+            background-color: white ; 
+            padding: 20px; /* Додати внутрішній відступ */
+            margin: 20px; /* Додати зовнішній відступ */
+            border-radius: 10px; 
+        }
+
+        .registration-form {
+            text-align: left; /* Вирівнення тексту в формі по лівому краю */
+            float: right; /* Розташування форми реєстрації справа */
+            margin-top: 20px; /* Зовнішній відступ від верхнього краю */
+        }
+
+        .note {
+            text-align: left;
+            margin-left: 20px; 
+            margin-bottom: 20px; 
+        }
+
+        .note p {
+            margin: 5px 0; /* Відступи для абзаців */
+        }
+
+        footer {
+            background-color: white;
+            padding: 10px;
+            width: 100%;
+        }
+        
+	img {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <aside class="registration-form"> <!Форма реєстрації у правому верхньому куті >
+        <form action="роздільник.php" method="post" onsubmit="return validateForm()">
+    <h2>Реєстрація</h2>
+    <label for="ім'я">Ім'я:</label>
+    <input type="text" id="ім'я" name="ім'я" required><br>
+
+    <label for="прізвище">Прізвище:</label>
+    <input type="text" id="прізвище" name="прізвище" required><br>
+
+    <label for="дата_народження">Дата народження:</label>
+    <input type="date" id="дата_народження" name="дата_народження" required><br>
+
+    <label for="електронна_пошта">Електронна пошта:</label>
+    <input type="email" id="електронна_пошта" name="електронна_пошта" required><br>
+
+    <label for="пароль">Пароль:</label>
+    <input type="password" id="пароль" name="пароль" required><br>
+
+    <label for="підтвердження_пароля">Підтвердження пароля:</label>
+    <input type="password" id="підтвердження_пароля" name="підтвердження_пароля" required><br>
+
+    <input type="submit" value="Зареєструватися">
+</form>
+
+    </aside>
+    <img src="https://kpi.ua/images/iszzi.png" alt="Логотип установи">
+    <table>
+        <caption><h2>Розклад навчальної групи</h2></caption>
+        <tr>
+            <td></td>
+            <th>18.09 Понеділок</th>
+            <th>19.09 Вівторок</th>
+            <th>20.09 Середа</th>
+            <th>21.09 Четвер</th>
+            <th>22.09 П'ятниця</th>
+            <th>23.09 Субота</th>
+            <th>24.09 Неділя</th>
+        </tr>
+        <tr>
+            <td>8:30-9:15</td>
+            <td rowspan="2">Право<br>517 каб.</td>
+            <td rowspan="2">ФВ<br>парк</td>
+            <td rowspan="2">ТІМ<br>503 каб.</td>
+            <td rowspan="2">СР<br>503 каб.</td>
+            <td rowspan="2">ФВ<br>парк</td>
+            <td rowspan="2">ЗВП<br>107 каб.</td>
+            <td rowspan="8">Вихідний день</td>
+        </tr>
+        <tr>
+            <td>9:20-10:05</td>
+        </tr>
+        <tr>
+            <td>10:25-11:10</td>
+            <td rowspan="2">ЗВП<br>6 каб.</td>
+            <td rowspan="2">ТІК<br>парк</td>
+            <td rowspan="2">ТІМ<br>503 каб.</td>
+            <td rowspan="2">Право<br>101 каб.</td>
+            <td rowspan="2">ТС<br>410</td>
+            <td rowspan="2">ЗВП<br>107 каб.</td>
+        </tr>
+        <tr>
+            <td>11:15-12:00</td>
+        </tr>
+        <tr>
+            <td>12:20-13:05</td>
+            <td rowspan="2">Програмування<br>503 каб.</td>
+            <td rowspan="2">ТС<br>410 каб.</td>
+            <td rowspan="2">ІМ<br>413 каб.</td>
+            <td rowspan="2">ФВ<br>парк</td>
+            <td rowspan="2">СР<br>517 каб.</td>
+            <td rowspan="2">СР<br>107 каб.</td>
+        </tr>
+        <tr>
+            <td>13:10-13:55</td>
+        </tr>
+        <tr>
+            <td>16:10-16:55</td>
+            <td rowspan="2">СР<br>101 каб.</td>
+            <td rowspan="2">СР<br>101 каб.</td>
+            <td rowspan="2">СР<br>101 каб.</td>
+            <td rowspan="2">Програмування<br>101 каб.</td>
+            <td rowspan="2">СР<br>101 каб.</td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td>17:00-17:45</td>
+        </tr>
+    </table>
+    <aside class="note"> 
+        <p><strong>Примітка:</strong></p>
+        <p>Право - Правознавство;</p>
+        <p>ФВ - Фізичне виховання-3;</p>
+        <p>ТІМ - Телекомунікаційні та інформаційні мережі;</p>
+        <p>СР - Самостійна робота;</p>
+        <p>ЗВП - Загально військова підготовка-1;</p>
+        <p>ТІК - Теорія інформації та кодування;</p>
+        <p>ТС - Теорія сигналів;</p>
+        <p>ІМ - Іноземна мова-3.</p>
+        <p>Програмування - Програмування-3;</p>
+    </aside>
+    <script>
+    // Функція для перевірки, чи співпадають паролі
+    function validateForm() {
+        // Отримуємо значення паролю та підтвердження паролю з форми //
+        var password = document.getElementById("пароль").value;
+        var confirmPassword = document.getElementById("підтвердження_пароля").value;
+        if (password !== confirmPassword) {  /* Перевіряємо, чи паролі не співпадають */
+            alert("Паролі не співпадають!"); /* Виводимо повідомлення про помилку */
+            return false; /* Повертаємо false, щоб форма не відправлялася */
+        }
+
+        // Повертаємо true, якщо паролі співпадають 
+        return true; /* Повертаємо true, якщо паролі співпадають */
+    }
+</script>
+
+</body>
+</html>
+
+

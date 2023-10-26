@@ -1,0 +1,64 @@
+/* Стилі для горизонтальної панелі навігації */
+.horizontal-nav {
+    background-color: #007BFF; /* Синій фон */
+    display: flex;
+}
+
+.horizontal-nav a {
+    color: #000; /* Білий текст */
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    border-right: 3px solid #0099CC; /* Блакитна рамка */
+}
+
+.horizontal-nav a:hover {
+    background-color: #FFFF00; /* Темно-синій фон при наведенні */
+}
+
+/* Стилі для вертикальної панелі навігації */
+.vertical-nav {
+    background-color: #007BFF; /* Синій фон */
+    width: 200px;
+}
+
+.vertical-nav a {
+    color: #000; /* Білий текст */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+    border: 3px solid #0099CC; /* Блакитна рамка */
+}
+
+.vertical-nav a:hover {
+    background-color: #FFFF00; /* Темно-синій фон при наведенні */
+}
+
+/* Стилі для елементів дизайну (іконки чи розділювачі) */
+.design-element {
+    width: 25px;
+    height: 20px;
+    background-color: #FFFF00; /* Жовтий колір для елементів дизайну */
+    margin: 5px 0; /* Додамо відступи між елементами дизайну */
+}
+
+/* Стилі для іконок */
+.horizontal-nav a img,
+.vertical-nav li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+.vertical-nav a img {
+  width: 50px; /* Задайте розмір іконки за вашим бажанням */
+  height: 30px;
+  margin-right: 5px;
+}
+.horizontal-nav a img {
+  width: 45px; /* Задайте розмір іконки за вашим бажанням */
+  height: 30px;
+  margin-right: 5px;
+}

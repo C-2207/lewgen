@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and DOM Example</title>
+    <style>
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+
+        .wave {
+            animation: wave 0.5s infinite alternate;
+        }
+
+        @keyframes wave {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>JavaScript and DOM Example</h1>
+        <p class="highlight">This is a paragraph with a class</p>
+        <ul>
+            <li id="item1">List item 1</li>
+            <li id="item2">List item 2</li>
+            <li id="item3">List item 3</li>
+        </ul>
+        <a href="#" id="link">Click me</a>
+        <div id="newElement">New Element</div>
+    </div>
+
+    <script>
+        // Task 1: Change styles and text
+        let highlightedElement = document.querySelector('.highlight');
+        highlightedElement.style.backgroundColor = 'yellow';
+        highlightedElement.textContent = 'Updated text';
+
+        // Task 2: Navigation and structure information
+        let listItem2 = document.getElementById('item2');
+        console.log('Parent of listItem2:', listItem2.parentNode.tagName);
+        console.log('Children of container:', document.getElementById('container').children);
+
+        // Task 3: Event handling
+        let linkElement = document.getElementById('link');
+        linkElement.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            // Task 1 (again): Change styles and text on link click
+            highlightedElement.style.color = 'blue';
+            highlightedElement.textContent = 'Styles updated again';
+
+            // Task 2 (again): Create and append a new element
+            let newElement = document.createElement('div');
+            newElement.textContent = 'Brand new!';
+            newElement.classList.add('wave'); // Adding the wave animation class
+            document.getElementById('container').appendChild(newElement);
+        });
+    </script>
+</body>
+</html>
